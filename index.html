@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="Script/Fader.js"></script>
+<body>
+
+<!-- 
+The red background on top
+-->
+<div class = "headerBG">
+</div>
+
+<!-- 
+The content
+-->
+<div id = "content">
+	<!--
+	Intro
+	-->
+	<div class = "contentColumn" id = "left">
+		<!-- Logo and Name -->
+		<img id = "logoName" src="Assets/logo.svg">
+
+		<!-- Introduction text -->
+		<h4> Why send the text when you can just tap! </h4>
+		<p>
+			Tappi is the easiest way to request a real-time photo update from whoever you want, when you want it. Tappi is the easiest way to request a real-time photo update from whoever you want, when you want it. 
+		</p>
+
+		<!-- App Store Badge -->
+		<a href = "http://google.com">
+			<img id = "badge" src="Assets/badge.svg">
+		</a>
+
+		<!-- Supplimentary Links-->
+		<div id = "supLinksContainer">
+			<a href = "Pages/contact.html">
+				<h4>Contact</h4>
+			</a>
+
+			<a href = "Assets/press.zip">
+				<h4>Press kit</h4>
+			</a>
+
+			<a href = "http://google.com">
+				<h4>Privacy & Terms</h4>
+			</a>
+		</div>
+	</div>
+	<!--
+	iPhone
+	-->
+	<div class = "contentColumn" id = "right">
+		<!-- Phone body -->
+		<img src="Assets/Phone.png">
+
+		<!-- Screenshots-->
+		<div id = "faders">
+			<img src="Assets/home.jpg">
+			<img src="Assets/camera.jpg">
+			<img src="Assets/conversation.jpg">
+		</div>
+	</div>
+</div>
+
+<script>
+	var fader = new Fader(document.getElementById("faders"));
+	fader.setInterval(3);
+</script>
+</body>
+</html>
