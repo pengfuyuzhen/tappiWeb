@@ -16,7 +16,7 @@ body
 {
 	width: 0;
 	height: 0;
-	border-top: 560px solid #F84F5E;
+	border-top: 550px solid #F84F5E;
 	border-right: 4000px solid transparent;
 	position: fixed;
 }
@@ -34,22 +34,14 @@ body
 {
 	width: 450px;
 	height: 540px;
-	margin-top: 110px;
+	margin-top: 100px;
 	float: left;
 	margin-left: 0px;
 }
 
-#left h4
-{
-	padding-top: 20px;
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	height: 1px;
-}
-
 #left p
 {
+	padding-top: 30px;
 	width: 400px;
 	font-size: 15px;
 	font-weight: lighter;
@@ -65,7 +57,7 @@ body
 #supLinksContainer
 {
 	width: 400px;
-	margin-top: 90px;
+	margin-top: 110px;
 	height: 44px;
 }
 
@@ -229,4 +221,87 @@ body
 {
 	height: 40px;
 }
+
+/*
+--------------------------------------------
+---------------- Legal page ----------------
+--------------------------------------------
+*/
+
+#legalHeader
+{
+	width: 100%;
+	height: 80px;
+	background-color: #F84F5E;
+	position: fixed;
+}
+
+#container
+{
+	width: 900px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menu
+{
+	width: 220px;
+	height: 600px;
+	margin-top: 80px;
+	margin-left: 0px;
+	float: left;
+	border-right: 1px solid #F84F5E;
+	position: fixed;
+}
+
+#menu h4
+{
+	color: #F84F5E;
+	padding-left: 68px;
+	font-size: 15px;
+}
+
+#privacy
+{
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+#text
+{
+	width: 670px;
+	height: 600px;
+	float: left;
+	margin-left: 250px;
+	margin-top: 90px;
+	padding-bottom: 30px;
+}
+
+/*
+--------------------------------------------
+---------- Terms and Privacy page ----------
+--------------------------------------------
+*/
+.legalHeader
+{
+	font-size: 20px;
+	color: #F84F5E;
+}
+
+.legalTitle
+{
+	font-size: 17px;
+}
+
+.legalText
+{
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+
+
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<div id = "legalHeader">
+		<div id = "logoContainer">
+			<!-- Logo -->
+			<a href="../index.html">
+				<img src="../Assets/logo.svg">
+			</a>
+
+			<!-- Links -->
+			<div id = "linkContainer">
+				<a href="legal.html">
+					<h4>Privacy & Terms</h4>
+				</a>
+				<a href="../Assets/press.zip">
+					<h4>Press kit</h4>
+				</a>
+				<a href="contact.html">
+					<h4>Contact</h4>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id = "container">
+		<div id = "menu">
+			<h4 id = "privacy" onclick="didClickLegal('privacy')" style="cursor:pointer">Privacy</h4>
+			<h4 id = "terms" onclick="didClickLegal('terms')" style="cursor:pointer">Terms</h4>
+		</div>
+		<div id = "text">
+		</div>
+	</div>
+
+	<script>
+		// Default is privacy
+		var terms = document.getElementById("terms");
+		var privacy = document.getElementById("privacy");
+		terms.style.opacity = "0.3";
+		$("#text").load("privacy.html");
+
+		function didClickLegal(id) {
+			if (id == "terms" && terms.style.opacity < 1) {
+				privacy.style.opacity = "0.3";
+				terms.style.opacity = "1";
+				$("#text").load("terms.html");
+			}else if (id == "privacy" && privacy.style.opacity < 1){
+				privacy.style.opacity = "1";
+				terms.style.opacity = "0.3";
+				$("#text").load("privacy.html");
+			}
+		}
+	</script>
+</body>
+</html>
