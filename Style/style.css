@@ -49,6 +49,11 @@ body
 	line-height: 20px;
 }
 
+#smallPitch
+{
+	display: none;
+}
+
 #badge
 {
 	margin-top: 60px;
@@ -141,7 +146,7 @@ body
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url(Assets/contact-bg.jpg);
+	background-image: url(../Assets/contact-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
